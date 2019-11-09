@@ -19,8 +19,10 @@ const Form = () => (
       <p>CUOTA FIJA POR MES</p>
       <p>$ 2,412.91</p>
     </div>
-    <Button text="OBTENÉ CRÉDITO" type="A" />
-    <Button text="VER DETALLE DE CUOTAS" type="B" />
+    <div className={style.section}>
+      <Button text="OBTENÉ CRÉDITO" type="A" />
+      <Button text="VER DETALLE DE CUOTAS" type="B" />
+    </div>
   </div>
 );
 

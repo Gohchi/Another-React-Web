@@ -1,3 +1,5 @@
+@import '../../globals.scss';
+
 .inputbox {
     position: absolute;
     right: 0;
@@ -5,10 +7,10 @@
 }
 
 .value {
-    color: white;
+    color: $fontColor;
     display: block;
     border: 1px solid #d7d6d6;
-    background: #093a63;
+    background: $siteColor;
     text-align: center;
     font-size: 1.4rem;
     font-weight: bold;

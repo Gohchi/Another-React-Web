@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { hot } from 'react-hot-loader';
-import HelloWorld from './components/hello-world';
 import Form from './components/form';
+import style from './main.scss';
 
 class App extends Component {
   constructor(props) {
@@ -11,8 +11,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <HelloWorld title="Hello from React webpack" />
+      <div className={style.main}>
         <Form />
       </div>
     );

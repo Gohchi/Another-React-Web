@@ -1,3 +1,5 @@
+@import '../../globals.scss';
+
 .buttonA {
     font-size: 2rem;
     text-align: center;
@@ -5,13 +7,14 @@
     
     font-weight: bold;
     text-decoration: none;
-    background-color: #37d682;
+    background: $buttonColorA;
     border: none;
-    color: white;
+    color: $fontColor;
     padding: 15px 52px;
+    width: 400px;
 
     &:active {
-        background-color: darken(#37d682, 10%);
+        background: darken($color: $buttonColorA, $amount: 10);
     }
 }
 .buttonB {
@@ -21,12 +24,14 @@
     
     font-weight: bold;
     text-decoration: none;
-    background-color: #4e89cc;
+    background: $buttonColorB;
     border: none;
-    color: white;
+    color: $fontColor;
     padding: 15px 22px;
+    width: 190px;
+    float: right;
 
     &:active {
-        background-color: darken(#4e89cc, 10%);
+        background: darken($color: $buttonColorB, $amount: 10);
     }
 }

@@ -1,6 +1,8 @@
+@import '../../globals.scss';
+
 .form {
-    background: #093a63;
-    color: white;
+    background: $siteColor;
+    color: $fontColor;
     padding: 1rem 4rem;
     font-family: 'Montserrat', sans-serif;
 }
@@ -21,7 +23,7 @@
 }
 .sectionresults {
     position: relative;
-    background: darken($color: #093a63, $amount: 3);
+    background: darken($color: $siteColor, $amount: 3);
     padding: 0 1rem;
     
     p {
