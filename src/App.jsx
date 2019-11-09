@@ -28,6 +28,7 @@ class App extends Component {
 
   render() {
     const { amount, term } = this.state;
+    const fee = Math.round((amount / term) * 100) / 100;
     return (
       <div className={style.main}>
         <Form
@@ -35,6 +36,7 @@ class App extends Component {
           onChangeAmount={this.handleAmount}
           term={term}
           onChangeTerm={this.handleTerm}
+          fee={fee}
         />
       </div>
     );

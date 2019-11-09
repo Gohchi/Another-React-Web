@@ -7,7 +7,7 @@ import Button from '../button';
 import Money from '../money';
 import Number from '../number';
 
-const Form = ({ amount, onChangeAmount, term, onChangeTerm }) => (
+const Form = ({ amount, onChangeAmount, term, onChangeTerm, fee }) => (
   <div className={style.form}>
     <p className={style.title}>Simulá tu crédito</p>
 
@@ -47,7 +47,7 @@ const Form = ({ amount, onChangeAmount, term, onChangeTerm }) => (
 
     <div className={style.sectionresults}>
       <p>CUOTA FIJA POR MES</p>
-      <p>$ 2,412.91</p>
+      <p>$ {fee}</p>
     </div>
 
     <div className={style.section}>
@@ -62,5 +62,6 @@ Form.propTypes = {
   onChangeAmount: PropTypes.func.isRequired,
   term: PropTypes.number.isRequired,
   onChangeTerm: PropTypes.func.isRequired,
+  fee: PropTypes.number.isRequired,
 };
 export default Form;
