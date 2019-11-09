@@ -37,3 +37,18 @@
         margin: 0;
     }
 }
+
+.slider {
+    width: 90%;
+    margin: 0 5%;
+}
+.sliderfooter {
+    p {
+        display: inline-block;
+        margin: 0.2rem 0 2rem;
+        font-size: 18px;
+    }
+    p:last-child {
+        float: right;
+    }
+}
