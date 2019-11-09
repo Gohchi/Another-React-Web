@@ -14,9 +14,9 @@ class App extends Component {
     this.handleTerm = this.handleTerm.bind(this);
   }
 
-  handleAmount(onValue) {
+  handleAmount(value) {
     this.setState({
-      amount: onValue,
+      amount: value > 50000 ? 50000 : value,
     });
   }
 
@@ -34,8 +34,12 @@ class App extends Component {
         <Form
           amount={amount}
           onChangeAmount={this.handleAmount}
+          minAmount={5000}
+          maxAmount={50000}
           term={term}
           onChangeTerm={this.handleTerm}
+          minTerm={3}
+          maxTerm={24}
           fee={fee}
         />
       </div>

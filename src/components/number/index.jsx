@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import style from './style.scss';
 
@@ -9,15 +9,20 @@ function validate(e, callback) {
     callback(value);
   }
 }
-const Number = ({ value, onChange }) => (
-  <div className={style.inputbox}>
-    <input
-      className={style.value}
-      value={value}
-      onChange={e => validate(e, onChange)}
-    />
-  </div>
-);
+class Number extends Component {
+  render() {
+    const { value, onChange } = this.props;
+    return (
+      <div className={style.inputbox}>
+        <input
+          className={style.value}
+          value={value}
+          onChange={e => validate(e, onChange)}
+        />
+      </div>
+    );
+  }
+}
 
 Number.propTypes = {
   value: PropTypes.number.isRequired,
