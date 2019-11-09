@@ -1,0 +1,18 @@
+.inputbox {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+}
+
+.value {
+    color: white;
+    display: block;
+    border: 1px solid #d7d6d6;
+    background: #093a63;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 3px;
+    width: 10rem;
+    font-family: 'Montserrat', sans-serif;
+}

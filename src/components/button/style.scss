@@ -1,0 +1,32 @@
+.buttonA {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #37d682;
+    border: none;
+    color: white;
+    padding: 15px 52px;
+
+    &:active {
+        background-color: darken(#37d682, 10%);
+    }
+}
+.buttonB {
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #4e89cc;
+    border: none;
+    color: white;
+    padding: 15px 22px;
+
+    &:active {
+        background-color: darken(#4e89cc, 10%);
+    }
+}
